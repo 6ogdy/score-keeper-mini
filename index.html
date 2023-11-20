@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col main-box ">
+                <div><img src="res/ping-pong.avif" alt=""></div>
+
+                <div class="div-hr">
+                    <h1>Score Keeper</h1>
+                </div>
+                <div class="div-hr">
+                    <h1 id="score"><span id="playerOneScore">0</span> to <span id="playerTwoScore">0</span></h1>
+                </div>
+                <div class="div-hr">
+                    <label class="col" for="rounds">Playing To:</label>
+                    <select id="rounds" class="form-select col-8">
+                        <option selected value="0">Rounds</option>
+                        <option value="3">3</option>
+                        <option value="5">5</option>
+                        <option value="7">7</option>
+                    </select>
+                </div>
+                <div class="div-hr">Use the buttons below to keep the score</div>
+                <form action="">
+                    <button id="playerOneUp" class="btn btn-primary">+1 Player One</button>
+                    <button id="playerTwoUp" class="btn btn-success">+1 Player Two</button>
+                    <button id="resetScore" class="btn btn-danger">Reset Score</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col"></div>
+    <script src="app.js"></script>
+</body>
+
+</html>
